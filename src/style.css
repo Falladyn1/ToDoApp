@@ -1,3 +1,103 @@
-h1{
-  color: red;
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Rationale&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+
 }
+
+body {
+  margin: 0;
+}
+
+.lexend-myfont {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  width: 75%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #C5C7BC;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.app_header {
+  background-color: #DEDED1;
+  border: 2px solid #B6AE9F;
+  border-radius: 50px;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.todo_list {
+  background-color: #DEDED1;
+  flex-grow: 1;
+  width: 100%;
+  border: 2px solid #B6AE9F;
+  padding: 1rem;
+  overflow-y: auto;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.todo_item {
+  background-color: #FBF3D1;
+  border-radius: 10px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem; 
+  margin-bottom: 0.5rem;
+}
+
+.todo_item_buttons{
+  display: flex;
+  gap: 10px;
+}
+
+.square_button {
+  width: 40px; 
+  aspect-ratio: 1 / 1;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  cursor: pointer;
+}
+
+.square_button img {
+  width: 60%; 
+  height: 60%;
+  object-fit: contain;
+}
+
+.button_green{
+  background-color: #198754;
+}
+
+.button_yellow{
+  background-color: #ffc107;
+}
+
+.button_red{
+  background-color: #dc3545;
+}
+

@@ -58,12 +58,38 @@ body {
 .todo_item {
   background-color: #FBF3D1;
   border-radius: 10px;
-  height: 50px;
+  min-height: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #eee;
   padding: 0 1rem; 
   margin-bottom: 0.5rem;
+  gap: 10px;
+}
+
+.todo_item_header{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.todo_item_name{
+  margin-right: auto;
+  font-size: large;
+  font-weight: 600;
+  border-bottom: 1px solid #555;
+}
+
+.todo_item_desc{
+  padding-left: 20px;
+}
+
+.todo_item_body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .todo_item_buttons{

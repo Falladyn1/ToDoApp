@@ -18,28 +18,32 @@
       <div class="todo_list">
         <h2>Lista zadań</h2>
         
-        <div id="todo-container"></div>
+        <div id="todo_container"></div>
 
-        <template id="todo-template">
+        <template id="todo_template">
             <div class="todo_item">
                 <div class="todo_info">
                     <div class="todo_item_header">
-                        <span class="todo_item_name"></span>
-                        <span class="todo_priority"></span>
+                        <div class="todo_item_name"></div>
+                        <div class="todo_priority"></div>
+                        <!-- <div class="todo_item_desc"></div> -->
                     </div>
                     <div class="todo_item_desc"></div>
                 </div>
+                <div class="todo_item_body">
+                  <div class="todo_status"></div>
 
-                <div class="todo_item_buttons">
-                    <button class="square_button button_green" type="button">
-                        <img src="src/svg/check.svg" alt="Zrobione">
-                    </button>
-                    <button class="square_button button_yellow" type="button">
-                        <img src="src/svg/edit.svg" alt="Edytuj">
-                    </button>
-                    <button class="square_button button_red" type="button">
-                        <img src="src/svg/delete.svg" alt="Usuń">
-                    </button>
+                  <div class="todo_item_buttons">
+                      <button class="square_button button_green" type="button">
+                          <img src="src/svg/check.svg" alt="Zrobione">
+                      </button>
+                      <button class="square_button button_yellow" type="button">
+                          <img src="src/svg/edit.svg" alt="Edytuj">
+                      </button>
+                      <button class="square_button button_red" type="button">
+                          <img src="src/svg/delete.svg" alt="Usuń">
+                      </button>
+                  </div>
                 </div>
             </div>
         </template>

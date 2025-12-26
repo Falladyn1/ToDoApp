@@ -53,7 +53,33 @@ body {
   overflow-y: auto;
   border-radius: 10px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
+
+.todo_form {
+  margin-top: auto;
+  margin-bottom: 10px;
+}
+
+.todo_input {
+  width: 80%;
+  height: 40px;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: medium;
+}
+
+.add_button{
+  width: 15%;
+  height: 40px;
+  border-radius: 15px;
+  font-size: large;
+  font-weight: 600;
+  color: white;
+  border: 0px;
+}
+
 
 .todo_item {
   background-color: #FBF3D1;
@@ -63,42 +89,42 @@ body {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #eee;
-  padding: 0 1rem; 
+  padding: 0 1rem;
   margin-bottom: 0.5rem;
   gap: 10px;
 }
 
-.todo_item_header{
+.todo_item_header {
   display: flex;
   flex-direction: column;
 
 }
 
-.todo_item_name{
+.todo_item_name {
   margin-right: auto;
   font-size: large;
   font-weight: 600;
   border-bottom: 1px solid #555;
 }
 
-.todo_item_desc{
+.todo_item_desc {
   padding-left: 20px;
 }
 
-.todo_item_body{
+.todo_item_body {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
 
-.todo_item_buttons{
+.todo_item_buttons {
   display: flex;
   gap: 10px;
 }
 
 .square_button {
-  width: 40px; 
+  width: 40px;
   aspect-ratio: 1 / 1;
   border: none;
   border-radius: 10px;
@@ -110,20 +136,23 @@ body {
 }
 
 .square_button img {
-  width: 60%; 
+  width: 60%;
   height: 60%;
   object-fit: contain;
 }
 
-.button_green{
+.button_green {
   background-color: #198754;
 }
 
-.button_yellow{
+.button_yellow {
   background-color: #ffc107;
 }
 
-.button_red{
+.button_red {
   background-color: #dc3545;
 }
 
+.button_blue{
+  background-color: #0d6efd;
+}
